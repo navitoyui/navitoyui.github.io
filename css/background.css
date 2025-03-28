@@ -16,10 +16,9 @@ body {
 
 /*封面文字格式*/
 .title {
-    font-size: 10vh;
+    font-size: 7rem;
     color: #fff;
-    padding-left: 10vh;
-    margin-top: 20vh;
+    padding-left: 5%;
 }
 
 /*去除掉超連結的格式*/
