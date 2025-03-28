@@ -1,7 +1,7 @@
 /*首頁不要滑動*/
-body {
+/*body {
     overflow: hidden;
-}
+}*/
 
 /*封面背景*/
 .bg {
@@ -16,9 +16,15 @@ body {
 
 /*封面文字格式*/
 .title {
-    font-size: 7rem;
+    font-size: 5rem;
     color: #fff;
-    padding-left: 5%;
+    padding-left: 5vw;
+    margin: center;
+}
+
+/*第一個向下鍵的位置*/
+.ArrowPlace {
+    margin-top: -5%;
 }
 
 /*去除掉超連結的格式*/
