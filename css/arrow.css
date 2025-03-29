@@ -80,7 +80,7 @@ a:hover .Arrow3 {
     transition: transform 0.6s ease-in-out;
     /*  圖片格式  */
     height: 20vh;
-    weight: 20vh;
+    width: 20vh;
 }
 
 @keyframes fadeIn {
@@ -122,7 +122,7 @@ a:hover .img2 {
     transition: transform 0.6s ease-in-out;
     /*  圖片格式  */
     height: 10vh;
-    weight: 10vh;
+    width: 10vh;
 }
 
 a:hover .img3 {
