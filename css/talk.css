@@ -10,7 +10,7 @@
 /*簡介向上鍵位置*/
 .Arrow2Place {
     position: relative;
-    top: 5px;
+    top: 1%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -36,8 +36,8 @@
 
 /*簡介向下鍵位置*/
 .Arrow3Place {
-    position: relative;
-    bottom: 5px;
+    position: absolute;
+    bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
 }

@@ -22,15 +22,14 @@ body {
     /*  文字區塊大小  */
     height: 75%;
     overflow: hidden;
-    display: block;
-    margin-inline: center;
+
 }
 
 
 /*封面向下鍵的位置*/
 .Arrow1Place {
     position: absolute;
-    bottom: 5px;
+    bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
 }
