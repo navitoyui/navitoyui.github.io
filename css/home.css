@@ -16,13 +16,14 @@ body {
 
 /*封面文字格式*/
 .title {
-    font-size: 15vh;
+    font-size: clamp(1rem, 7rem, 7rem);
     color: #fff;
     padding-left: 3%;
     /*  文字區塊大小  */
     height: 75%;
     overflow: hidden;
     display: block;
+    margin-inline: center;
 }
 
 
