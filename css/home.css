@@ -16,7 +16,7 @@ body {
 
 /*封面文字格式*/
 .title {
-    font-size: clamp(1rem, 7rem, 7rem);
+    font-size: clamp(1rem, 10vh, 7rem);
     color: #fff;
     padding-left: 3%;
     /*  文字區塊大小  */
