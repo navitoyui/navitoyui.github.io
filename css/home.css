@@ -5,24 +5,34 @@ body {
 
 /*封面背景*/
 .home {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    overflow: hidden;
     background-image: url("../img/zutomayo.png");
     background-size: cover;
     background-position: center;
     position: relative;
     background-repeat: no-repeat;
+    scroll-snap-align: start;
+    /* 讓滾動時，頁面貼齊視口 */
+    display: flex;
+}
+
+/*typed1 = TitlePlace*/
+#typed1 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateX(0%);
 }
 
 /*封面文字格式*/
-.title {
+.Title {
     font-size: clamp(1rem, 10vh, 7rem);
     color: #fff;
     padding-left: 3%;
     /*  文字區塊大小  */
     height: 75%;
-    overflow: hidden;
-
 }
 
 

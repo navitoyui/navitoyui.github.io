@@ -1,16 +1,27 @@
 /*talk背景*/
 .talk {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-position: center;
     position: relative;
     overflow: auto;
+    display: flex;
+    /* 讓滾動時，頁面貼齊視口 */
+    scroll-snap-align: start;
 }
 
 /*簡介向上鍵位置*/
 .Arrow2Place {
-    position: relative;
+    position: absolute;
     top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.introPlace {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -33,6 +44,7 @@
     /*要想辦法固定內文block的大小*/
     max-height: 100vh;
 }
+
 
 /*簡介向下鍵位置*/
 .Arrow3Place {

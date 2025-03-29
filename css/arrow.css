@@ -6,9 +6,22 @@ a:active {
     text-decoration: none;
 }
 
-/*頁面滑動效果*/
-html {
+.PageSize {
+    /*  每一頁的長寬設定  */
+    width: 100vw;
+    height: 100vh;
+    /*  控制頁面不要跑版  */
+    overflow-y: scroll;
     scroll-behavior: smooth;
+    scroll-padding: 0 0 20vh 0;
+    scroll-snap-type: y mandatory;
+    /* 隱藏滾動條 (Firefox) */
+    scrollbar-width: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    /* 隱藏滾動條 (Chrome) */
+    display: none;
 }
 
 /*滑動鍵文字動畫、格式*/
