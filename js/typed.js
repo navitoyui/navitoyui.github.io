@@ -12,7 +12,7 @@ document.getElementById("switchT2").addEventListener("click", function() {
         new Typed('#typed2', {
             stringsElement: '#typed2-str',
             typeSpeed: 30,
-            loop: false
+            loop: false,
         });
     }
 });

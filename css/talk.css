@@ -19,11 +19,17 @@
 }
 
 .introPlace {
+    /*  大小  */
+    width: 90%;
+    /*  位置  */
     position: absolute;
     top: 20%;
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
+    /*  樣式  */
+    border: solid #fff;
+    border-radius: 0.5em;
 }
 
 /*打字動畫游標格式*/
@@ -31,7 +37,7 @@
     font-size: 2vh;
     color: #fff;
     padding-left: 0.2rem;
-    animation: blink 0.7s infinite;
+    animation: blink 1s infinite;
 }
 
 
