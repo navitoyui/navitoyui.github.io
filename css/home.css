@@ -7,15 +7,13 @@ body {
 .home {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background-image: url("../img/zutomayo.png");
     background-size: cover;
     background-position: center;
     position: relative;
     background-repeat: no-repeat;
+    /* 滾動時，頁面貼齊視口 */
     scroll-snap-align: start;
-    /* 讓滾動時，頁面貼齊視口 */
-    display: flex;
 }
 
 /*typed1 = TitlePlace*/

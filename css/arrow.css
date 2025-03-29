@@ -13,10 +13,11 @@ a:active {
     /*  控制頁面不要跑版  */
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-padding: 0 0 20vh 0;
     scroll-snap-type: y mandatory;
     /* 隱藏滾動條 (Firefox) */
     scrollbar-width: none;
+    /* 禁止邊界滾動 */
+    overscroll-behavior: none;
 }
 
 .wrapper::-webkit-scrollbar {
