@@ -9,3 +9,8 @@ window.addEventListener("keydown", (event) => {
         event.preventDefault();
     }
 });
+
+// 禁止手機觸控滑動
+window.addEventListener("touchmove", (event) => {
+    event.preventDefault();
+}, { passive: false });
