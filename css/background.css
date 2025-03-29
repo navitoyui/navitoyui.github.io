@@ -22,6 +22,12 @@ body {
     padding-left: 5vw;
     margin: center;
 }
+/* 臨時 */
+#typed1 {
+    height: 12rem; /* 根據你的字數可以調整 */
+    overflow: hidden;
+    display: block;
+}
 
 /*第一個向下鍵的位置*/
 .ArrowPlace {
