@@ -1,0 +1,142 @@
+/*去除掉超連結的格式*/
+a {
+    text-decoration: none;
+}
+
+.PageSize {
+    /*  每一頁的長寬設定  */
+    width: 100vw;
+    height: 100vh;
+    /*  控制頁面不要跑版  */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    /* 隱藏滾動條 (Firefox) */
+    scrollbar-width: none;
+    /* 禁止邊界滾動 */
+    overscroll-behavior: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    /* 隱藏滾動條 (Chrome) */
+    display: none;
+}
+
+/*滑動鍵文字動畫、格式*/
+/*首頁向下按鈕文字*/
+.Arrow1 {
+    /*  隱藏文字  */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(-20px);
+    /*  格式  */
+    font-size: 4vh;
+    color: #e3e3e3;
+/*    display: inline-block;*/
+    margin-bottom: -1rem;
+}
+
+a:hover .Arrow1 {
+    /*  顯示文字  */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*簡介向上按鈕文字*/
+.Arrow2 {
+    /*  隱藏文字  */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px);
+    /*  格式  */
+    font-size: 3vh;
+    color: #e3e3e3;
+/*    display: inline-block;*/
+    margin-top: -1rem;
+}
+
+a:hover .Arrow2 {
+    /*  顯示文字  */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*簡介向下按鈕文字*/
+.Arrow3 {
+    /*  隱藏文字  */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(-20px);
+    /*  格式  */
+    font-size: 3vh;
+    color: #e3e3e3;
+/*    display: inline-block;*/
+    margin-bottom: -1rem;
+}
+
+a:hover .Arrow3 {
+    /*  顯示文字  */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*滑動鍵圖片動畫、格式*/
+/*首頁向下*/
+.img1 {
+    /*  圖片原位置  */
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 2s forwards;
+    transform: translateY(-20px);
+    transition: transform 0.6s ease-in-out;
+    /*  圖片格式  */
+    height: 20vh;
+    width: 20vh;
+}
+
+@keyframes fadeIn {
+
+    /*  控制圖片消失與出現時的效果  */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+a:hover .img1 {
+    /*  碰觸圖片位置  */
+    transform: translateY(0);
+}
+
+/*簡介向上*/
+.img2 {
+    /*  圖片原位置  */
+    transform: translateY(20px);
+    transition: transform 0.6s ease-in-out;
+    /*  圖片格式  */
+    width: 10vh;
+    height: 10vh;
+}
+
+a:hover .img2 {
+    /*  碰觸圖片位置  */
+    transform: translateY(0);
+}
+
+/*簡介向下*/
+.img3 {
+    /*  圖片原位置  */
+    transform: translateY(-20px);
+    transition: transform 0.6s ease-in-out;
+    /*  圖片格式  */
+    height: 10vh;
+    width: 10vh;
+}
+
+a:hover .img3 {
+    /*  碰觸圖片位置  */
+    transform: translateY(0);
+}

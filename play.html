@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link -->
+    <link rel="shortcut icon" href="img/neko.ico">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/talk.css">
+    <link rel="stylesheet" type="text/css" href="css/arrow.css">
+    <!-- title -->
+    <title>NTY</title>
+    <!-- style -->
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <div class="PageSize">
+        <!-- 封面頁 -->
+        <p id="home"></p>
+        <div class="home">
+            <!-- 封面文字 -->
+            <div id="typed1-str">
+                <div>
+                    <p class="Title">Hello,<br>Welcome.</p>
+                </div>
+            </div>
+            <span id="typed1" class="Title"></span>
+            <!-- 向下滑動鍵 -->
+            <div align="center" class="Arrow1Place">
+                <a href="#talk" id="switchT2">
+                    <p class="Arrow1">scroll down</p>
+                    <br>
+                    <img src="img/down.png" alt="向下滑動" class="img1">
+                </a>
+            </div>
+        </div>
+        <!-- 封面頁結束 -->
+        <!-- 簡介頁 -->
+        <div class="talk">
+            <!-- 向上滑動鍵 -->
+            <div align="center" class="Arrow2Place">
+                <a href="#home">
+                    <img src="img/up.png" alt="向上滑動" class="img2">
+                    <br>
+                    <p class="Arrow2">scroll up</p>
+                </a>
+            </div>
+            <!-- 網站簡介內文 -->
+            <div align="center" class="introPlace">
+                <div id="typed2-str">
+                    <p>歡迎來到這個網頁，我是佳薰^_^<br>
+                        接下來我會為您做簡單的文字導覽:<br>
+                        因為還沒做完網站所以這裡暫時用一些廢話替代，<br>
+                        然後如果有空的話下面應該會生出一個網站內容索引機器人(?<br>
+                    </p>
+                </div>
+                <span id="typed2" class="intro"></span>
+            </div>
+            <!-- 向下滑動鍵 -->
+            <div align="center" class="Arrow3Place">
+                <a href="#Menu">
+                    <p class="Arrow3">scroll down</p>
+                    <br>
+                    <img src="img/down.png" alt="向下滑動" class="img3">
+                </a>
+            </div>
+        </div>
+        <p id="talk"></p>
+        <!-- 簡介頁結束 -->
+    </div>
+    <!-- js -->
+    <!-- 封面頁 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+</body>
+
+</html>
