@@ -70,7 +70,7 @@ a:hover .Arrow2 {
     /*  格式  */
     font-size: 3vh;
     color: #e3e3e3;
-/*    display: inline-block;*/
+    display: inline-block;
     margin-bottom: -1rem;
 }
 
