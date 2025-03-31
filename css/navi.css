@@ -13,44 +13,12 @@ a {
     text-decoration: none;
 }
 
+
 /*側欄顯示與消失*/
-/*側欄按鈕*/
-#hidden {
-    /*隱藏系統自設按鈕*/
-    display: none;
-}
-
-#hidden:checked~.navi {
-    width: 0px;
-}
-
-#hidden:checked~.navi ul {
-    display: none;
-}
-
-#hidden:checked~.hiddenButton {
-    left: 105%;
-}
-
-/*側欄按鈕格式*/
-.hiddenButton {
-    /*  位置  */
-    position: absolute;
-    left: 105%;
-    top: 1rem;
-    /*  造型  */
-    background: #ff9800;
-    color: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    /*  動畫效果  */
-    transition: left 0.3s ease-in-out;
-}
-
 /*側欄整體*/
 .navi {
     /*  側欄位置  */
-    position: absolute;
+    position: fixed;
     transition: width 0.3s ease-in-out;
     /*側欄大小*/
     height: 100vh;
@@ -59,34 +27,83 @@ a {
     background: #fdfdfd;
 }
 
+#hidden:checked~.navi {
+    width: 0px;
+}
+
+/*側欄按鈕*/
+#hidden {
+    /*隱藏系統自設按鈕*/
+    display: none;
+}
+
+/*側欄按鈕*/
+.hiddenButton {
+    /*  位置  */
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: 1rem;
+    /*  造型  */
+    background: #edb06f;
+    color: white;
+    padding: 1.1rem;
+    border-radius: 0.5rem;
+    /*  動畫效果  */
+    transition: left 0.3s ease-in-out;
+}
+
+#hidden:checked~.hiddenButton {
+    left: 1rem;
+}
+
 /*側欄內部*/
 /*消滅系統原設定的marker*/
 .navi ul {
     list-style-type: none;
-    margin: 50% 10%;
+    margin-block: 50%;
+    margin-right: 20%;
+    text-align: center;
+
 }
+
+#hidden:checked~.navi ul {
+    display: none;
+}
+
 
 /*選取前*/
 .navi ul li a {
-    font-size: 6vh;
-    line-height: 10vh;
+    font-size: clamp(1rem, 6vh, 15rem);
+    line-height: 200%;
     color: #abb7bc;
     text-decoration-color: rgba(106, 108, 161, 0);
     text-underline-offset: 0vh;
     transition:
-        text-decoration-color 0.5s ease-in-out,
-        text-underline-offset 0.5s ease-in-out,
-        font-size 0.5s ease-in-out,
-        line-height 0.5s ease-in-out;
+        text-decoration-color 0.3s ease-in-out,
+        text-underline-offset 0.3s ease-in-out,
+        font-size 0.3s ease-in-out,
+        line-height 0.3s ease-in-out;
 }
 
 /*選取後*/
 .navi ul li a:hover {
-    font-size: 6.5vh;
-    line-height: 10.5vh;
-    color: #84baf0;
+    font-size: clamp(2rem, 6.5vh, 16rem);
+    line-height: 210%;
+    color: #5ea0bd;
     text-decoration: underline;
     text-underline-offset: 2vh;
     text-decoration-color: rgba(106, 108, 161, 1.0);
-    text-decoration-style: wavy;
+    text-decoration-style: solid;
+}
+
+/*遮罩*/
+.curtain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hidden:checked~.curtain {
+    display: none;
 }

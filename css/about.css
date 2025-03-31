@@ -1,0 +1,13 @@
+main {
+    margin: auto;
+}
+
+.title {
+    background: white;
+    width: 80vw;
+    height: 120vh;
+    padding: 2%;
+    margin: auto;
+    margin-top: 5%;
+    transition: margin-left 0.3s ease-in-out;
+}
