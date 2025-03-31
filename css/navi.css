@@ -45,7 +45,7 @@ a {
     top: 1rem;
     /*  造型  */
     background: #edb06f;
-    color: white;
+    color: #fff;
     padding: 1.1rem;
     border-radius: 0.5rem;
     /*  動畫效果  */
@@ -94,6 +94,8 @@ a {
     text-decoration-color: rgba(106, 108, 161, 1.0);
     text-decoration-style: solid;
 }
+
+
 
 /*遮罩*/
 .curtain {
