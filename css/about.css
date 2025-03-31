@@ -3,11 +3,14 @@ main {
 }
 
 .title {
-    background: white;
-    width: 80vw;
-    height: 120vh;
+    background: #fff;
+    width: 100vw;
     padding: 2%;
+    text-align: center;
     margin: auto;
-    margin-top: 5%;
     transition: margin-left 0.3s ease-in-out;
+}
+
+.about {
+    background: #3b3b3b;
 }
