@@ -22,7 +22,7 @@ a {
     transition: width 0.3s ease-in-out;
     /*側欄大小*/
     height: 100vh;
-    width: clamp(10rem, 15vw, 70rem);
+    width: clamp(8rem, 15vw, 15rem);
     /*側欄造型*/
     background: #fdfdfd;
 }
@@ -63,7 +63,6 @@ a {
     margin-block: 50%;
     margin-right: 20%;
     text-align: center;
-
 }
 
 #hidden:checked~.navi ul {
@@ -73,7 +72,7 @@ a {
 
 /*選取前*/
 .navi ul li a {
-    font-size: clamp(1rem, 5vw, 3.5rem);
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
     line-height: 200%;
     color: #abb7bc;
     text-decoration-color: rgba(106, 108, 161, 0);
@@ -87,7 +86,7 @@ a {
 
 /*選取後*/
 .navi ul li a:hover {
-    font-size: clamp(1.5rem, 5.5vw, 4rem);
+    font-size: clamp(1.5rem, 3vw, 3rem);
     line-height: 210%;
     color: #5ea0bd;
     text-decoration: underline;
