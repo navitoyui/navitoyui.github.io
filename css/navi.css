@@ -73,7 +73,7 @@ a {
 
 /*選取前*/
 .navi ul li a {
-    font-size: clamp(1rem, 6vh, 15rem);
+    font-size: clamp(1rem, 3vw, 5rem);
     line-height: 200%;
     color: #abb7bc;
     text-decoration-color: rgba(106, 108, 161, 0);
@@ -87,7 +87,7 @@ a {
 
 /*選取後*/
 .navi ul li a:hover {
-    font-size: clamp(2rem, 6.5vh, 16rem);
+    font-size: clamp(2rem, 3.5vw, 6rem);
     line-height: 210%;
     color: #5ea0bd;
     text-decoration: underline;
