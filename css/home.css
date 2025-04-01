@@ -1,5 +1,6 @@
 /*首頁不要滑動*/
 body {
+    font-family: Tahoma;
     overflow: hidden;
     background: #3b3b3b;
     margin: 0;
