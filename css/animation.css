@@ -1,0 +1,97 @@
+.ani {
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ani::before {
+    content: "(⁰▿⁰)";
+    animation: emo 15s;
+}
+
+@keyframes emo {
+    0% {
+        content: "(⁰▿⁰)";
+    }
+
+    5% {
+        content: "(⁰∇⁰)";
+    }
+
+    10% {
+        content: "(^▿^)";
+    }
+
+    15% {
+        content: "(⁰∇⁰)";
+    }
+
+    20% {
+        content: "(⁰▿⁰)";
+    }
+
+    25% {
+        content: "ヽ(^×^´)ゞ";
+    }
+
+    30% {
+        content: "ヽ(⁰▿⁰´)ゞ";
+    }
+
+    35% {
+        content: "ヽ( ° ▽°)ノ";
+    }
+
+    40% {
+        content: "ヽ(^▿^´)ゞ";
+    }
+
+    50% {
+        content: "ヽ(⁰∇⁰´)ゞ";
+    }
+
+    55% {
+        content: "ヽ( ° ▿°)ノ";
+    }
+
+    60% {
+        content: "ヽ( ^ ∇^)ノ";
+    }
+
+    65% {
+        content: "ヽ(^×^´)ゞ";
+    }
+
+    70% {
+        content: "ヽ(⁰▿⁰´)ゞ";
+    }
+
+    75% {
+        content: "ヽ( ° ▽°)ノ";
+    }
+
+    80% {
+        content: "ヽ(^▿^´)ゞ";
+    }
+
+    85% {
+        content: "ヽ(⁰∇⁰´)ゞ";
+    }
+
+    90% {
+        content: "(^▿^)";
+    }
+
+    95% {
+        content: "(⁰∇⁰)";
+    }
+
+    100% {
+        content: "(⁰▿⁰)";
+    }
+}

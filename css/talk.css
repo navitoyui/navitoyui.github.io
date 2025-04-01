@@ -13,19 +13,20 @@
 /*簡介向上鍵位置*/
 .Arrow2Place {
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .introPlace {
     /*  大小  */
-    width: 90%;
+    width: 75vw;
+    max-height: 60vh;
     /*  位置  */
     position: absolute;
-    top: 20%;
-    bottom: 20%;
     left: 50%;
+    top: 20%;
+    z-index: 1;
     transform: translateX(-50%);
     /*  樣式  */
     border: solid #fff;
@@ -55,7 +56,7 @@
 /*簡介向下鍵位置*/
 .Arrow3Place {
     position: absolute;
-    bottom: 1%;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
 }

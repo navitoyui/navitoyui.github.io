@@ -32,7 +32,7 @@ a {
     /*  格式  */
     font-size: 4vh;
     color: #e3e3e3;
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
     margin-bottom: -1rem;
 }
 
@@ -51,7 +51,7 @@ a:hover .Arrow1 {
     /*  格式  */
     font-size: 3vh;
     color: #e3e3e3;
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
     margin-top: -1rem;
 }
 
@@ -70,7 +70,7 @@ a:hover .Arrow2 {
     /*  格式  */
     font-size: 3vh;
     color: #e3e3e3;
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
     margin-bottom: -1rem;
 }
 
@@ -86,7 +86,7 @@ a:hover .Arrow3 {
 .img1 {
     /*  圖片原位置  */
     opacity: 0;
-    animation: fadeIn 1s ease-in-out 2s forwards;
+    animation: fade 1s ease-in-out 2s forwards;
     transform: translateY(-20px);
     transition: transform 0.6s ease-in-out;
     /*  圖片格式  */
@@ -94,7 +94,7 @@ a:hover .Arrow3 {
     width: 20vh;
 }
 
-@keyframes fadeIn {
+@keyframes fade {
 
     /*  控制圖片消失與出現時的效果  */
     from {
