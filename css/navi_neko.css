@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e2cdb8;
+    display: flex;
+    margin: 0;
+}
+
+/*去除掉超連結的格式*/
+a {
+    text-decoration: none;
+}
+
+
+/*側欄顯示與消失*/
+/*側欄整體*/
+.navi {
+    /*  側欄位置  */
+    position: fixed;
+    z-index: 3;
+    transition: width 0.3s ease-in-out;
+    /*側欄大小*/
+    height: 100vh;
+    width: clamp(8rem, 15vw, 15rem);
+    /*側欄造型*/
+    background: #fdfdfd;
+}
+
+#hidden:checked~.navi {
+    width: 0px;
+}
+
+/*側欄按鈕*/
+#hidden {
+    /*隱藏系統自設按鈕*/
+    display: none;
+}
+
+/*側欄按鈕*/
+.hiddenButton {
+    /*  位置  */
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: 1rem;
+    z-index: 3;
+    /*  造型  */
+    background: #e2cdb8;
+    border: 1px solid #3b3b3b;
+    color: #3b3b3b;
+    padding: 1.1rem;
+    border-radius: 0.5rem;
+    /*  動畫效果  */
+    transition: left 0.3s ease-in-out;
+}
+
+#hidden:checked~.hiddenButton {
+    left: 1rem;
+}
+
+/*側欄內部*/
+/*消滅系統原設定的marker*/
+.navi ul {
+    list-style-type: none;
+    margin-block: 50%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+#hidden:checked~.navi ul {
+    display: none;
+}
+
+
+/*選取前*/
+.navi ul li a {
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    line-height: 200%;
+    color: #abb7bc;
+    text-decoration-color: rgba(106, 108, 161, 0);
+    text-underline-offset: 0vh;
+    transition:
+        text-decoration-color 0.3s ease-in-out,
+        text-underline-offset 0.3s ease-in-out,
+        font-size 0.3s ease-in-out,
+        line-height 0.3s ease-in-out;
+}
+
+/*選取後*/
+.navi ul li a:hover {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    line-height: 210%;
+    color: #5ea0bd;
+    text-decoration: underline;
+    text-underline-offset: 2vh;
+    text-decoration-color: rgba(106, 108, 161, 1.0);
+    text-decoration-style: solid;
+}
+
+
+/*彩蛋設定*/
+.navi ul li a.play {
+    /*  位置  */
+    display: block;
+    margin-top: 40vh;
+    /*  大小  */
+    font-size: clamp(0.5rem, 1vw, 1.5rem);
+    /*  格式  */
+    background: #d8eaf0;
+    color: #3b3b3b;
+    text-decoration: none;
+    transition:
+        font-size 0.3s ease-in-out,
+}
+
+.navi ul li a.play:hover {
+    font-size: clamp(0.6rem, 1.1vw, 1.6rem);
+    background: #b0c0d1;
+}
+
+/*遮罩*/
+.curtain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease-in-out;
+
+}
+
+#hidden:checked~.curtain {
+    background: rgba(0, 0, 0, 0);
+}

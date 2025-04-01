@@ -1,0 +1,60 @@
+body {
+    font-family: Tahoma;
+    overflow-x: hidden;
+}
+
+main {
+    margin: auto;
+}
+
+.title {
+    /*  格式 */
+    background: #3b3b3b;
+    color: #fdfdfd;
+    /*  位置  */
+    width: 100vw;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: -2rem;
+    transition: margin-left 0.3s ease-in-out;
+    /*  內文換行設定  */
+    white-space: nowrap;
+}
+
+/*小插畫*/
+.plate {
+    /* 用block高度調整插畫位置   */
+    height: 3.4rem;
+    background: #3b3b3b;
+    border-bottom: 4.2px solid rgba(255, 255, 255, 0.5);
+}
+
+/*小插畫大小與位置*/
+.plate img {
+    margin-left: 20%;
+    height: 5rem;
+    width: 10rem;
+}
+
+/*左側主欄位*/
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/*右側副欄位*/
+.rightcolumn {}
+
+/*內文格式*/
+.card {
+    /*  格式  */
+    border: 4.2px solid #3b3b3b;
+    border-radius: 0.5rem;
+    color: #3b3b3b;
+
+    /*  位置  */
+    margin-block: 2rem;
+    margin-inline: 2rem;
+    padding-left: 1rem;
+}
