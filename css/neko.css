@@ -1,11 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Tahoma;
     overflow-x: hidden;
+    display: flex;
+    margin: 0;
+    background: #e2cdb8;
+
 }
 
 main {
     margin: auto;
 }
+
 
 .title {
     /*  格式 */
@@ -17,7 +26,6 @@ main {
     text-align: center;
     margin: auto;
     margin-bottom: -2rem;
-    transition: margin-left 0.3s ease-in-out;
     /*  內文換行設定  */
     white-space: nowrap;
 }
@@ -27,7 +35,7 @@ main {
     /* 用block高度調整插畫位置   */
     height: 3.4rem;
     background: #3b3b3b;
-    border-bottom: 4.2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 4.2px solid rgba(225, 225, 225, 0.5);
 }
 
 /*小插畫大小與位置*/
@@ -40,27 +48,133 @@ main {
 /*左側主欄位*/
 .leftcolumn {
     float: left;
-    width: 75%;
+    width: 70%;
 }
 
 /*右側副欄位*/
-.rightcolumn {}
+.rightcolumn {
+    float: left;
+    width: 25%;
+}
+
+.row {
+    margin-left: 3rem;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*內文格式*/
 .card {
-    /*  格式  */
-    border: 4.2px solid #3b3b3b;
-    border-radius: 0.5rem;
-    color: #3b3b3b;
-    background: rgba(255, 255, 250, 0.7);
-
-
     /*  位置  */
     margin-block: 2rem;
-    margin-inline: 2rem;
-    padding-left: 1rem;
+    margin-left: 2rem;
 }
 
-.C1 {}
+.card header {
+    color: #3b3b3b;
+    padding-left: 2rem;
+    border: 4.2px solid rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 250, 0.7);
+}
 
-.C2 {}
+.card table {
+    width: 100%;
+    /*  位置  */
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+/*簡介頭像*/
+.card table .c1 {
+    /*  格式  */
+    font-size: 20px;
+    background: #3b3b3b;
+    color: #fdfdfd;
+    /*  位置  */
+    width: 35%;
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+.card table .c1 a {
+    color: #fdfdfd;
+}
+
+/*簡介*/
+.card table .c2 {
+    /*  格式  */
+    font-size: 20px;
+    white-space: nowrap;
+    border: 5px solid #3b3b3b;
+    /*  位置  */
+    width: 65%;
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+/*側欄*/
+.card table .c3 {
+    /*  格式  */
+    font-size: 20px;
+    white-space: nowrap;
+    background: #3b3b3b;
+    color: #fdfdfd;
+    /*  位置  */
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin: auto;
+    display: block;
+}
+
+/*影片夾*/
+.card table .c4 {
+    /*  格式  */
+    background: #3b3b3b;
+    /*  位置  */
+    width: 50%;
+    padding-inline: 1rem;
+}
+
+/*影片介紹*/
+.card table .c5 {
+    /*  格式  */
+    font-size: 20px;
+    white-space: nowrap;
+    border: 5px solid #3b3b3b;
+    /*  位置  */
+    width: 50%;
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+.card table td video {
+    width: 100%;
+    padding-block: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+    }
+
+    .card header {
+        margin-right: 2rem;
+    }
+
+    .card table .c1,
+    .card table .c2,
+    .card table .c3,
+    .card table .c4,
+    .card table .c5 {
+        display: inline-block;
+        width: 100%;
+    }
+
+
+}

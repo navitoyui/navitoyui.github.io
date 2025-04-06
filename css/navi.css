@@ -49,7 +49,6 @@ a {
     background: #edb06f;
     color: #fff;
     padding: 1.1rem;
-    border-radius: 0.5rem;
     /*  動畫效果  */
     transition: left 0.3s ease-in-out;
 }
@@ -69,6 +68,14 @@ a {
 
 #hidden:checked~.navi ul {
     display: none;
+}
+
+.navi ul li:first-child {
+    color: #5ea0bd;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    display: block;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
 }
 
 

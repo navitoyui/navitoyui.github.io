@@ -1,13 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background: #e2cdb8;
-    display: flex;
-    margin: 0;
-}
-
 /*去除掉超連結的格式*/
 a {
     text-decoration: none;
@@ -46,11 +36,9 @@ a {
     top: 1rem;
     z-index: 3;
     /*  造型  */
-    background: #e2cdb8;
-    border: 1px solid #3b3b3b;
-    color: #3b3b3b;
+    background: #5B8E7D;
+    color: #fdfdfd;
     padding: 1.1rem;
-    border-radius: 0.5rem;
     /*  動畫效果  */
     transition: left 0.3s ease-in-out;
 }
@@ -72,6 +60,13 @@ a {
     display: none;
 }
 
+.navi ul li:first-child {
+    color: #5ea0bd;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    display: block;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
 
 /*選取前*/
 .navi ul li a {

@@ -67,10 +67,19 @@ a {
     margin-block: 50%;
     margin-right: 20%;
     text-align: center;
+    padding-top: 20%;
 }
 
 #hidden:checked~.navi ul {
     display: none;
+}
+
+.navi ul li:first-child {
+    color: #5ea0bd;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    display: block;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
 }
 
 
