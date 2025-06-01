@@ -1,69 +1,53 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>側欄推動按鈕移動（純 CSS）</title>
-    <style>
-        body {
-            display: flex;
-            margin: 0;
-            font-family: Arial, sans-serif;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>copy</title>
+    <style type="text/css">
+    .ani {
+        width: 100px;
+        height: 100px;
+        color: #000;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .ani::before {
+        content: "OvO";
+        animation: emo 4s infinite;
+    }
+
+    @keyframes emo {
+        0% {
+            content: "OvO";
         }
 
-        /* 隱藏 checkbox */
-        #toggle {
-            display: none;
+        25% {
+            content: "^V^";
         }
 
-        /* 側欄 */
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            background: #333;
-            color: white;
-            transition: width 0.3s ease-in-out;
-            padding-top: 50px;
-            position: relative; /* 讓按鈕可以相對於這個區塊定位 */
+        50% {
+            content: "OwO";
         }
 
-        /* 漢堡按鈕 */
-        .toggle-label {
-            position: absolute;
-            left: 100%; /* 讓按鈕緊貼側欄的右邊 */
-            top: 20px;
-            background: #ff9800;
-            color: white;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: left 0.3s ease-in-out;
+        75% {
+            content: "oVo";
         }
 
-        /* 當 checkbox 被勾選時，縮小側欄 */
-        #toggle:checked ~ .sidebar {
-            width: 0px;
+        100% {
+            content: "OvO";
         }
-
-        /* 由於按鈕使用 left: 100%，所以當側欄變小時，它會被推動 */
+    }
     </style>
 </head>
 
 <body>
-    <!-- 隱藏的 Checkbox 開關 -->
-    <input type="checkbox" id="toggle">
-    <!-- 側欄 -->
-    <div class="sidebar">
-        <!-- 控制按鈕 -->
-        <label for="toggle" class="toggle-label">☰</label>
-        <ul>
-            <li>首頁</li>
-            <li>關於我們</li>
-            <li>服務</li>
-            <li>聯絡</li>
-        </ul>
-    </div>
+    <div class="ani"></div>
 </body>
 
 </html>

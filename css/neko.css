@@ -81,6 +81,8 @@ main {
     background: rgba(255, 255, 250, 0.7);
 }
 
+
+
 .card table {
     width: 100%;
     /*  位置  */
@@ -114,6 +116,69 @@ main {
     width: 65%;
     text-align: center;
     padding-inline: 1rem;
+}
+
+/*表格*/
+.card table .c6 {
+    /*  格式  */
+    font-size: 20px;
+    white-space: nowrap;
+    border: 5px solid #3b3b3b;
+    /*  位置  */
+    width: 20%;
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+/*表格*/
+.card table .c0 {
+    /*  格式  */
+    font-size: 20px;
+
+    /*  位置  */
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+/*表格內文*/
+.card table .c7 {
+    /*  格式  */
+    font-size: 20px;
+    white-space: nowrap;
+    background: #3b3b3b;
+    color: #fdfdfd;
+    /*  位置  */
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin: auto;
+    display: block;
+}
+
+/*長條*/
+.card table .c8 {
+    /*  格式  */
+    font-size: 20px;
+    white-space: nowrap;
+    background: #3b3b3b;
+    color: #fdfdfd;
+    /*  位置  */
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin: auto;
+    display: block;
+}
+
+/*長條2*/
+.card table .c9 {
+    /*  格式  */
+    font-size: 20px;
+    white-space: nowrap;
+    border: 5px solid #3b3b3b;
+    /*  位置  */
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin: auto;
+    display: block;
 }
 
 /*側欄*/
